@@ -1,4 +1,4 @@
-> cd SlimLoc
+> cd slimlocal 
 > php -S localhost:8001 
 
 PHP 7.0.30-0+deb9u1 (cli) (built: Jun 14 2018 13:50:25) ( NTS )
