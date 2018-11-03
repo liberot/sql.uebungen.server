@@ -1,0 +1,1 @@
+cp -a ../../sql.uebungen.client/build/production/cliento/ ./
