@@ -1,4 +1,4 @@
-<?php require 'vendor/autoload.php';
+<?php require '../vendor/autoload.php';
 
 $app = new Slim\App();
 
@@ -32,7 +32,7 @@ $app->get("/", function ($request, $response, $args) {
 
 $app->get("/select1st", function ($request, $response, $args) {
 
-	require_once('../.sqlexercises/db.conn.util.php');
+	require_once('../../.sqlexercises/db.conn.util.php');
 	
 	$sql = "call sqlexcdb.select_assets_by_release_id(1)";
 	$doc = q($sql);
@@ -45,7 +45,7 @@ $app->get("/select1st", function ($request, $response, $args) {
 
 $app->get("/select2nd", function ($request, $response, $args) {
 
-	require_once('../.sqlexercises/db.conn.util.php');
+	require_once('../../.sqlexercises/db.conn.util.php');
 	
 	$sql = "call sqlexcdb.select_assets_by_artist_id_2nd(1)";
 	$doc = q($sql);
