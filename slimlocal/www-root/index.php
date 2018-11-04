@@ -9,6 +9,11 @@ $app->get('/hello/{name}', function ($request, $response, $args) {
 */
 
 $app->get("/", function ($request, $response, $args) {
+	require_once('./index.html');
+});
+
+
+$app->get("/dtest", function ($request, $response, $args) {
 
 	$doc = [];
 	
